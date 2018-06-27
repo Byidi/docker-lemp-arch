@@ -10,4 +10,4 @@ RUN sed -i -E 's/^;(security.limit_extensions = )(.*)/\1/' /etc/php/php-fpm.d/ww
 
 EXPOSE 9000
 
-CMD ["/usr/bin/php-fpm", "-F"]
+ENTRYPOINT ["/usr/bin/php-fpm", "-F"]

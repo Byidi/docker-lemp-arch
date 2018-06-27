@@ -15,4 +15,4 @@ ONBUILD RUN rm /etc/nginx/sites-enabled/00-default.conf
 EXPOSE 80
 EXPOSE 443
 
-CMD ["nginx", "-g", "daemon off;"]
+ENTRYPOINT ["nginx", "-g", "daemon off;"]
